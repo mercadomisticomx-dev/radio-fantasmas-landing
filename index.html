@@ -5,105 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Radio Fantasmas | La Leyenda Continúa - Oficial</title>
     
-    <meta name="description" content="El legendario programa Radio Fantasmas regresa. Temas paranormales, leyendas y apariciones. Muy pronto en formato podcast y tienda oficial.">
-    <meta name="keywords" content="Radio Fantasmas, paranormal, leyendas, fantasmas, podcast terror, México">
+    <meta name="description" content="El legendario programa Los Radio Fantasmas regresa tras 40 años. Historias paranormales, leyendas de Guadalajara, reencarnación y más. Muy pronto en podcast y tienda oficial.">
+    <meta name="keywords" content="Radio Fantasmas, radio fantasma, paranormal, leyendas, fantasmas, podcast terror México, la llorona, la casa de los perros, tuneles subterraneos guadalajara, vida despues de la muerte, reencarnacion, libreria esoterica kundalini, misterio">
+    <meta name="author" content="Los Radio Fantasmas">
     
-    <meta property="og:title" content="Los Radio Fantasmas - Próximamente">
-    <meta property="og:description" content="Más de 40 años de historias paranormales regresan. No te pierdas el gran lanzamiento.">
-    <meta property="og:image" content="banner-los-radio-fantasmas.jpg">
-    <meta property="og:url" content="https://losradiofantasmas.com">
+    <meta property="og:title" content="Los Radio Fantasmas - La Leyenda Continúa">
+    <meta property="og:description" content="Más de 40 años de misterio regresan. No te pierdas el gran lanzamiento del podcast oficial.">
+    <meta property="og:image" content="banner%20los%20radio%20fantasmas.jpg">
+    <meta property="og:url" content="https://losradiofantasmas.com.mx">
+    <meta property="og:type" content="website">
 
     <style>
-        body, html {
+        * {
             margin: 0;
             padding: 0;
-            height: 100%;
-            background-color: #050a0f; /* Color oscuro acorde al banner */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            overflow-x: hidden;
+            box-sizing: border-box;
         }
 
-        .container {
-            text-align: center;
-            max-width: 1000px;
-            padding: 20px;
+        body, html {
+            height: 100%;
+            width: 100%;
+            background-color: #050a0f;
+            overflow: hidden; /* Evita scroll innecesario */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .hero-image {
             width: 100%;
-            max-width: 800px;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 0 30px rgba(0,0,0,0.7);
-            margin-bottom: 2rem;
-            animation: fadeIn 2s ease-in;
+            height: 100%;
+            object-fit: contain; /* Ajusta la imagen sin recortarla */
+            animation: fadeIn 2.5s ease-in-out;
         }
 
-        .content h1 {
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        .content p {
-            font-size: 1.2rem;
-            color: #ccc;
-            margin-bottom: 2rem;
-        }
-
-        /* Estilo para el botón de contacto o aviso */
-        .cta-button {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: #1a3a4a;
-            color: white;
-            text-decoration: none;
-            border: 1px solid #4a90e2;
-            border-radius: 5px;
-            transition: 0.3s;
-            font-weight: bold;
-        }
-
-        .cta-button:hover {
-            background-color: #4a90e2;
-            box-shadow: 0 0 15px #4a90e2;
+        /* Técnica SEO: Contenido oculto para humanos, visible para Google */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
-        footer {
-            margin-top: 50px;
-            font-size: 0.8rem;
-            color: #555;
+        /* Optimización para móviles: asegurar que se vea bien en vertical */
+        @media (max-aspect-ratio: 1/1) {
+            .hero-image {
+                object-fit: cover; /* En móviles muy delgados, cubre toda la pantalla */
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <img src="banner-los-radio-fantasmas.jpg" alt="Los Radio Fantasmas Banner Oficial" class="hero-image">
+    <main class="hero-container">
+        <img src="banner%20los%20radio%20fantasmas.jpg" 
+             alt="Los Radio Fantasmas - Programa de radio paranormal con más de 40 años de trayectoria. Regreso oficial como podcast y tienda." 
+             class="hero-image">
         
-        <div class="content">
-            <h1>LA LEYENDA CONTINÚA</h1>
-            <p>El misterio, lo paranormal y las historias que marcaron una época regresan muy pronto.</p>
-            <p><strong>Espéranos...</strong></p>
-            
-            <a href="mailto:contacto@tusitio.com" class="cta-button">SÉ EL PRIMERO EN ENTERARTE</a>
+        <div class="visually-hidden">
+            <h1>Los Radio Fantasmas: Casos y Cosas del Más Allá</h1>
+            <h2>La leyenda continúa en Guadalajara, Jalisco</h2>
+            <p>El programa clásico de radio especializado en temas paranormales, apariciones, leyendas mexicanas como la Llorona y la Casa de los Perros. Estamos preparando el lanzamiento de nuestra nueva plataforma de podcast y tienda mística oficial.</p>
         </div>
-    </div>
-
-    <footer>
-        &copy; 2026 Los Radio Fantasmas. Todos los derechos reservados.
-    </footer>
+    </main>
 
 </body>
 </html>
