@@ -9,49 +9,80 @@
     <meta name="googlebot" content="noindex">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        body, html {
-            height: 100%;
-            width: 100%;
-            background-color: #050a0f;
-            overflow: hidden; 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    body, html {
+        height: 100%;
+        width: 100%;
+        background-color: #050a0f; /* Color base oscuro */
+        overflow: hidden; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .hero-container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* CONFIGURACIÓN PARA ESCRITORIO */
+    .hero-image {
+        /* Marco delgado: la imagen ocupa el 92% de la pantalla */
+        max-width: 92vw; 
+        max-height: 92vh;
+        width: auto;
+        height: auto;
+        object-fit: contain; 
+        display: block;
+        animation: fadeIn 2.5s ease-in-out;
+    }
+
+    /* CONFIGURACIÓN PARA MÓVIL */
+    @media (max-width: 768px) {
         .hero-container {
+            padding: 0; /* Eliminamos cualquier margen en móvil */
+        }
+        
+        .hero-image {
+            /* Forzamos a que ocupe el 100% de la pantalla */
+            max-width: 100vw;
+            max-height: 100vh;
             width: 100vw;
             height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            
+            /* 'cover' hace que la imagen llene el alto total, 
+               recortando los lados si es necesario */
+            object-fit: cover; 
+            object-position: center;
         }
-
-       .hero-image {
-    width: 100vw;   /* Ocupa todo el ancho visual */
-    height: 100vh;  /* Ocupa todo el alto visual */
-    object-fit: cover; /* Ajusta la imagen para llenar el contenedor recortando lo mínimo necesario */
-    object-position: center; /* Asegura que el centro de la imagen siempre esté visible */
-    animation: fadeIn 2.5s ease-in-out;
-}
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @media (max-width: 768px) {
-    .hero-image {
-        object-fit: contain; 
     }
-}
-    </style>
+
+    /* Ocultar contenido para SEO */
+    .seo-content {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
 </head>
 <body>
 
@@ -66,5 +97,6 @@
 
 </body>
 </html>
+
 
 
